@@ -182,8 +182,8 @@ for i = 1:length(noiseFac)
 %     plot(f,freq_noiseNsig_freq_minNoise)
 %     plot(f,freq_noiseNsig_freq_overNoise)
     plot(f,freq_noiseNsig_time_minNoise)
-%     plot(f,freq_noiseNsig_time_overNoise)
-    plot(f,freq_noiseNsig_time_logMinNoise)
+    plot(f,freq_noiseNsig_time_overNoise)
+    plot(f,freq_noiseNsig_time_overNoise)
     legend({'noise'
         'signal'
         'time domain sum'
@@ -192,8 +192,7 @@ for i = 1:length(noiseFac)
 %         'frequency domain sum - noise'
 %         'frequency domain sum / noise'
         'time domain sum - noise'
-%         'time domain sum / noise'
-        'exp( log(time domain sum) - log(noise) )'}')
+        'time domain sum / noise'}')
     fMax=0.15; [a,b] = min(abs((f-fMax)));
     ax = gca; ax.XLim = [0 fMax];
     ax.YScale = 'log';
@@ -208,8 +207,7 @@ for i = 1:length(noiseFac)
 %         freq_noiseNsig_freq_minNoise(1:b)
 %         freq_noiseNsig_freq_overNoise(1:b)
         freq_noiseNsig_time_minNoise(1:b)
-%         freq_noiseNsig_time_overNoise(1:b)
-        freq_noiseNsig_time_logMinNoise(1:b)];
+        freq_noiseNsig_time_overNoise(1:b)];
     yLim = [min(yLim) max(yLim)];
     yLim_all(i,:) = yLim;
 
@@ -224,8 +222,7 @@ for i = 1:length(noiseFac)
     freq_noiseNsig_freq_minNoise_all(i) = freq_noiseNsig_freq_minNoise(b);
     freq_noiseNsig_freq_overNoise_all(i) = freq_noiseNsig_freq_overNoise(b);
     freq_noiseNsig_time_minNoise_all(i) = freq_noiseNsig_time_minNoise(b);
-%     freq_noiseNsig_time_overNoise_all(i) = freq_noiseNsig_time_overNoise(b);
-    freq_noiseNsig_time_logMinNoise_all(i) = freq_noiseNsig_time_logMinNoise(b);
+    freq_noiseNsig_time_overNoise_all(i) = freq_noiseNsig_time_overNoise(b);
 end
 yLim_all(yLim_all<0) = 1e-1;
 yLim = [min(yLim_all(:,1)) max(yLim_all(:,2))];
@@ -256,8 +253,7 @@ bar([freq_noise_all
 %     freq_noiseNsig_freq_minNoise_all
 %     freq_noiseNsig_freq_overNoise_all
     freq_noiseNsig_time_minNoise_all
-%     freq_noiseNsig_time_overNoise_all
-    freq_noiseNsig_time_logMinNoise_all]')
+    freq_noiseNsig_time_overNoise_all]')
 ax = gca; ax.XTickLabel = num2str(noiseFac');
 xlabel('noiseFac')
 ax.YScale = 'log';
@@ -269,7 +265,6 @@ legend({'noise'
 %         'frequency domain sum - noise'
 %         'frequency domain sum / noise'
         'time domain sum - noise'
-%         'time domain sum / noise'
-        'exp( log(time domain sum) - log(noise) )'}' ...
+        'time domain sum / noise'}' ...
         ,'Location','northwest')
 
