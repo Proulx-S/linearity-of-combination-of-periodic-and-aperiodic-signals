@@ -5,7 +5,7 @@ Numerical simulations demonstrating how periodic and aperiodic signals linearly 
 ## License
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by]  
-by Sébastien Proulx, sebastien.prouxl2@mail.mcgill.ca, https://orcid.org/0000-0003-1709-3277  
+by Sébastien Proulx, jsproulx@mgh.harvard.edu, https://orcid.org/0000-0003-1709-3277  
 [![CC BY 4.0][cc-by-image]][cc-by]
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
