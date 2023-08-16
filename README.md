@@ -3,11 +3,11 @@
 Numerical simulations demonstrating how periodic and aperiodic signals linearly combined in time-domain combine in frequency domain.
 
 ## Instructions
-See doIt.html for a render of the doIt.mlx matlab live script that contain the main text and simulations.
+See doIt.html for a render of the doIt.mlx matlab live script that contains the main text and simulations.
 The doIt.m matlab script is an older draft version.
 
-## Acknowledgments
-Miroslav Stoyanov (Oak Ridge National Laboratory) for his matlab implementation (f_alpha_gaussian.m) of a peer-reviewed colored noise generation algorithm (https://people.sc.fsu.edu/~jburkardt/m_src/cnoise/cnoise.html).
+## Acknowledgment
+Miroslav Stoyanov (Oak Ridge National Laboratory) for his matlab implementation (f_alpha_gaussian.m) of an algorithm for generating colored noise (https://people.sc.fsu.edu/~jburkardt/m_src/cnoise/cnoise.html).
 
 ## License
 This work is licensed under a
